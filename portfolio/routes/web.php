@@ -25,3 +25,10 @@ Route::get('/aboutme', function () {
 Route::get('/projects', function () {
     return view('projects');
 });
+
+Route::get('/stonkscasino', function () {
+    return view('Projects/stonkscasino');
+});
+Route::get('/defluitendefietser', function () {
+    return view('Projects/defluitendefietser');
+});
