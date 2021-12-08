@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\ProjectsController;
+use App\Http\Controllers\ImagesController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -32,3 +35,10 @@ Route::get('/stonkscasino', function () {
 Route::get('/defluitendefietser', function () {
     return view('Projects/defluitendefietser');
 });
+
+Route::get('/index', [ProjectsController::class, 'index'])->name('index');
+Route::get('/{id}', [ProjectsController::class, 'project']);
+
+Route::get('test/{id}', [ImagesController::class, 'image']);
+
+
